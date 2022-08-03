@@ -2,7 +2,7 @@ import { IPost } from './../interfaces/posts.interface';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { Document } from 'mongoose';
 import { Type } from 'class-transformer';
-import { User } from 'src/users/schemas/user.schema';
+import { User } from '../../users/schemas/user.schema';
 
 @Schema({
   timestamps: {

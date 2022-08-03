@@ -1,7 +1,7 @@
 import { isValidObjectId } from 'mongoose';
 import { IAuthorPost } from './../posts/interfaces/posts.interface';
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
-import { NotFoundException } from 'src/exceptions/not-found.exception';
+import { NotFoundException } from '../exceptions/not-found.exception';
 
 export const AuthorPost = createParamDecorator(
   (_: unknown, ctx: ExecutionContext): IAuthorPost => {

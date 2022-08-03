@@ -12,8 +12,8 @@ import {
 import { PostsService } from './posts.service';
 import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';
-import { AuthorPost } from 'src/decorators/author-post.decorator';
-import { NotFoundException } from 'src/exceptions/not-found.exception';
+import { AuthorPost } from '../decorators/author-post.decorator';
+import { NotFoundException } from '../exceptions/not-found.exception';
 import { ObjectId } from 'mongoose';
 
 @Controller('posts')
